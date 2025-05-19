@@ -3,6 +3,16 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+    <div class="min-h-screen bg-gray-100">
+    <nav class="p-4 bg-white shadow flex gap-4">
+      <router-link to="/" class="text-blue-600 hover:underline">Home</router-link>
+      <router-link to="/upload" class="text-blue-600 hover:underline">Upload</router-link>
+      <router-link to="/files" class="text-blue-600 hover:underline">Files</router-link>
+    </nav>
+    <main class="p-6">
+      <router-view />
+    </main>
+  </div>
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
